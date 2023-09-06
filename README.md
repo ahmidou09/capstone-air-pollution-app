@@ -111,7 +111,9 @@ Use at the end '--fix' to help you out with any error.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
+## ⭐ Design
+
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 ## 🤝 Contributing <a name="contributing"></a>
 
