@@ -1,0 +1,120 @@
+.header {
+  width: 100%;
+  min-height: 30vh;
+  background-image:
+    linear-gradient(
+      20deg,
+      rgba(252, 80, 146, 0.2) 0%,
+      rgba(252, 80, 144, 0.8) 0%
+    ),
+    url("../Assets/header-bg-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: start;
+}
+
+.header-title h1 {
+  line-height: 1.2;
+  font-size: 1.8rem;
+}
+
+.header-title p {
+  font-size: 1rem;
+}
+
+.region-title {
+  background-color: var(--color-primary-2);
+  padding: 5px;
+}
+
+.region {
+  min-height: calc(60vh - 30px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.region-box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.region-box:nth-child(4n + 1),
+.region-box:nth-child(4n + 4) {
+  background-color: var(--color-primary-1);
+}
+
+.back {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+
+.back-icon {
+  font-size: 1.3rem;
+}
+
+.region-button {
+  background-color: transparent;
+  border: none;
+}
+
+.region-box a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.btn-icon-left {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
+
+.icon-left {
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+@media (max-width: 360px) {
+  .region {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .region-box:nth-child(4n + 1),
+  .region-box:nth-child(4n + 4) {
+    background-color: transparent;
+  }
+
+  .region-box:nth-child(2n) {
+    background-color: var(--color-primary-2);
+  }
+
+  .header-title p {
+    display: none;
+  }
+}
