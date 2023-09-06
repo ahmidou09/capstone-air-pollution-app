@@ -3,7 +3,7 @@ import './AirPollutionDetails.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams, useNavigate } from 'react-router';
 import { BsArrowLeftCircle } from 'react-icons/bs';
-import { fetchAirPollution } from '../redux/airPollution/airPollutionSlice';
+import fetchAirPollution from '../redux/airPollution/airPollutionApi';
 
 const AirPollutionDetails = () => {
   const { country, lat, lon } = useParams();

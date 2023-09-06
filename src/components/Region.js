@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
-import { fetchCountries } from '../redux/countries/countriesSlice';
+import fetchCountries from '../redux/countries/countriesApi';
 
 const Region = () => {
   const { region } = useParams();
