@@ -31,7 +31,7 @@ const Region = () => {
         {error && <div>error</div>}
         <ul className="list-country">
           {!loading && data?.map((country) => (
-            <li key={country.name.common} className="list-item">
+            <li key={country.latlng[0]} className="list-item">
               <Link to={`/${region}/${country.name.common}/${country.latlng[0]}/${country.latlng[1]}`}>
                 <div className="country">
                   <img src={country.flags.png} alt={country.flags.alt} className="country-img" />
