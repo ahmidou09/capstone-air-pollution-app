@@ -21,7 +21,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 REACT Bookstore <a name="about-project"></a>
+# 📖 The Air Pollution App <a name="about-project"></a>
 
 **The Air Pollution App** is a simple web application that allows users to stay informed about the air quality conditions in countries worldwide. It provides a user-friendly experience with precise regional search capabilities.
 
@@ -75,6 +75,9 @@ code . (To open VS Code Editor)
 Then, you will change everything you want!
 
 ### Commands
+
+- ✔️ _npm install_:
+  Installs the required packages and dependencies for the app. Run this command first after cloning the repository.
 
 - ✔️ _npm start_:
   Runs the app in the development mode.
